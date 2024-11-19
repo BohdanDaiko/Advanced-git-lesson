@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+}
+
+.menu a{}
+
+.promo{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.promo-text{}
+
+.promo-image{
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+}
+
+.products{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 250px);
+}
+
+.products{
+    height: 350px;
+    background-color: coral;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+menu-switch{
+    display: none;
+}
+
+@media screen and (max-width: 426px){
+    .products{
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .promo{
+        flex-direction: column;
+    }
+
+    .menu-switch{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+}
